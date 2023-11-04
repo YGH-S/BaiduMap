@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    百度地图的布局-->
+    <!--        开启点击事件监听-->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        tools:ignore="MissingConstraints"/>
+
+<!--    定位到当前位置-->
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/ib_location"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/icon_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+</RelativeLayout>
